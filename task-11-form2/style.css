@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Quicksand Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./fonts/Quicksand/Quicksand-Bold.woff2) format('woff2'), url(./fonts/Quicksand/Quicksand-Bold.woff) format('woff'), url(./fonts/Quicksand/Quicksand-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Quicksand Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/Quicksand/Quicksand-Regular.woff2) format('woff2'), url(./fonts/Quicksand/Quicksand-Regular.woff) format('woff'), url(./fonts/Quicksand/Quicksand-Regular.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input {
+    outline: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.shadow {
+    background-image: url("shadow.png");
+    opacity: 0.91;
+    position: absolute;
+    left: 167px;
+    top: 417px;
+    width: 466px;
+    height: 196px;
+    z-index: 3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+.wrap {
+    padding: 50px 70px;
+}
+
+.main {
+    background-image: url(./image/Shadow.png);
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.form-controls {
+    margin-bottom: 15px;
+}
+
+.form-title {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.form-title-text {
+    font-size: 18px;
+    font-family: 'Quicksand Bold', sans-serif;
+    border: 2px solid transparent;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 20px;
+    margin-right: 20px;
+    transition: all 0.2s linear;
+    padding-bottom: 2px;
+}
+
+.form-title-text:last-child {
+    margin-right: 0;
+}
+
+.form-title-text:hover,
+.form-title-text.active {
+    border-bottom: 2px solid rgb(230, 106, 100);
+    color: rgba(255, 255, 255, 1);
+}
+
+.label-field {
+    font-size: 16px;
+    font-family: 'Quicksand Bold', sans-serif;
+    color: rgb(251, 246, 228);
+    line-height: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    min-height: 42px;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(191, 185, 204, 0.54);
+    font-size: 16px;
+    font-family: 'Quicksand Regular', sans-serif;
+    color: rgb(251, 246, 228);
+    line-height: 20px;
+    padding: 0 10px;
+}
+
+.input-field:focus {
+    border: 1px solid #FFF;
+}
+
+.checkbox-text {
+    font-size: 13px;
+    font-family: 'Quicksand Bold', sans-serif;
+    color: rgb(251, 246, 228);
+    line-height: 15px;
+    display: inline-block;
+}
+
+.form-checkbox {
+    margin-bottom: 40px;
+}
+
+.checkbox-label {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.indicator {
+    background-color: rgb(35, 174, 146);
+    width: 14px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+input[type="checkbox"]:checked+label .indicator {
+    color: white;
+    text-align: center;
+}
+
+.form-button {
+    font-size: 18px;
+    font-family: 'Quicksand Bold', sans-serif;
+    color: rgb(251, 246, 228);
+    line-height: 20px;
+    background-color: #23ae92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-height: 42px;
+    width: 100%;
+    margin-bottom: 30px;
+    transition: all 0.2s linear;
+}
+
+.form-button:hover {
+    opacity: 0.7;
+}
+
+.form-links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.form-link {
+    font-size: 13px;
+    font-family: 'Quicksand Regular', sans-serif;
+    color: rgb(185, 185, 204);
+    line-height: 15px;
+    border-bottom: 2px solid rgba(150, 193, 218, 0.1);
+    padding-bottom: 3px;
+}
+
+.form-link:hover {
+    border: 0;
+    opacity: 0.8;
+}
